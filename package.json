@@ -1,0 +1,19 @@
+{
+  "name": "class6",
+  "version": "1.0.0",
+  "description": "Tarea 2 calendario",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+  },
+  "keywords": [
+    "node.js",
+    "mongo"
+  ],
+  "author": "Hillary Cordero",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^1.2.1",
+    "mongodb": "^3.2.7"
+  }
+}
