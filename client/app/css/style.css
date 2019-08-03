@@ -1,0 +1,131 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#calender {
+  height: 600px;
+  width: 55%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+a {
+  color:black;
+  float:left;
+}
+
+#monthyear {
+  display:inline;
+  color:white;
+}
+
+p , .daysheader {
+  
+}
+
+.daysheader { 
+  color:rgb(115, 170, 207);
+}
+
+img {
+  display:inline;
+  width:16px;
+  transition:all 1s ease-in-out;
+  color: white;
+}
+
+#previous:hover {
+  transform: translate(-20px, 0px);
+}
+
+#next:hover {
+  transform: translate(20px, 0px);
+}
+
+#top{
+  height: 9%;
+  font-size: 18px;
+  padding-top: 17px;
+  text-align: left;
+  padding-left: 111px;
+  background: rgb(115, 170, 207);
+}
+#days {
+left:50%;
+margin:20px;
+}
+#add  {
+  display:none;
+}
+
+#date:hover {
+  background-color:rgb(115, 170, 207);
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 150px;
+  background-color: transparent;
+  border: 2px solid white;
+  display: inline-block;
+  width: 50px;
+  height: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  box-shadow: inset 0px 0px 0px 20px transparent;
+  border: 2px solid rgb(115, 170, 207);
+}
+
+input[type=checkbox]:after {
+content: '';
+position: absolute;
+width: 29px;
+height: 29px;
+border-radius: 150px;
+cursor: pointer;
+background-color: white;
+left: -2px;
+}
+
+input[type="checkbox"]:checked:after {
+  left: 20px;
+  background: rgb(115, 170, 207);
+}
+
+.events-form{
+  background: #A4C400;
+  height: 25%;
+  padding-top: 50px;
+}
+
+.tittle{
+  color: white;
+}
+
+.space-tittle{
+  padding: 5px;
+}
+.input-favorite{
+  width: 20px;
+}
+.btn {
+  margin-top: 30px;
+  width: 15%;
+  border: 0;
+  padding: 9px;
+  background-color: rgb(115, 170, 207);
+  color: white;
+  font-size: 20px;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.btn:hover{
+  background: white;
+  color: #A4C400;
+}

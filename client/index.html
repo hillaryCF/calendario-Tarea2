@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../client/app/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="project">
+    <div id="calender">
+      <p id="current"></p> 
+      <div id="top">
+        <img id="previous" src="https://cdn3.iconfinder.com/data/icons/icons-shop/512/left_arrow-256.png" onclick="prevYear()"/>
+        <p id="monthyear"></p>
+        <img id="next" src="https://cdn3.iconfinder.com/data/icons/icons-shop/512/right_arrow-256.png" onclick="nextYear()" /> 
+      </div>
+      <div id="days"></div>
+      <form >
+        <input id="add" type="text" name="Task" value=" ">
+      </form>
+        <div class="events-form">
+          <form  action="http://localhost:3000/api/v1/events" method="POST">
+            <label for="Date" class="tittle">Date</label>
+            <input type="text" class="space-tittle" name="Date" id="Date" value="" />
+            <label for="Hour" class="tittle">Hour</label>
+            <input type="time" class="space-tittle" name="Hour" id="Hour" value="" />
+            <label for="Name" class="tittle">Name</label>
+            <input type="time" class="space-tittle" name="Name" id="Name" value="" />
+            <label for="Favorite" class="tittle">Favorite</label>
+            <input type="checkbox"clssclass="space-tittle" name="Favorite" id="Favorite" value=""/>
+            <label for="Notes" class="tittle">Notes</label>
+            <input type="text" class="space-tittle" name="Notes" id="Notes" value="" />
+            <div class="bottons">
+              <input type="button" value="Cancel" class="btn cancel">
+              <input type="button" value="Save" class="btn save">
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+  <script src="../client/main.js"></script>
+  <script src="app/core/base.component.js"></script>
+    <script src="app/core/template.js"></script>
+    <script src="app/core/api.js"></script>
+    <script src="app/navbar/navbar.component.js"></script>
+    <script src="app/router/router.component.js"></script>
+    <script src="app/cars/cars.component.js"></script>
+</body>
+</html>
